@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Airsoft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Réservation Airsoft</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#reserver">Réserver</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="accueil" class="accueil">
+        <div class="container">
+            <h2>Bienvenue sur notre site de réservation Airsoft</h2>
+            <p>Réservez dès maintenant pour vivre une expérience unique!</p>
+            <a href="#reserver" class="btn">Réserver maintenant</a>
+        </div>
+    </section>
+    
+    <section id="reserver" class="reservation">
+        <div class="container">
+            <h2>Réservez votre session Airsoft</h2>
+            <form action="reservation.php" method="post">
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="nombre_joueurs">Nombre de joueurs:</label><br>
+                <input type="number" id="nombre_joueurs" name="nombre_joueurs" min="1" required><br>
+                <button type="submit">Réserver</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou préoccupation, n'hésitez pas à nous contacter.</p>
+            <form action="contact.php" method="post">
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="avis" class="avis">
+        <div class="container">
+            <h2>Avis</h2>
+            <!-- Contenu de la section "Avis" -->
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p class="help">Besoin d'aide ? <a href="#aide">Cliquez ici</a></p>
+        </div>
+    </footer>
+    
+    <section id="aide" class="aide">
+        <div class="container">
+            <h2>Aide</h2>
+            <!-- Contenu de la section "Aide" -->
+        </div>
+    </section>
+</body>
+</html>
